@@ -3,14 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pizzeria d'Omi — Pizzas maison à Lille</title>
-<meta name="description" content="Chez Omi, pizzeria à Lille : pâte levée 24 h, viandes halal du quartier, cuisson au four à pizza. 2 rue Jeanne d'Arc. Ouvert du mercredi au dimanche dès 18h.">
+<title>Pizzeria d'Omi · Pizza maison et halal à Lille</title>
+<meta name="description" content="Pizzeria d&#39;Omi, 2 rue Jeanne d&#39;Arc à Lille : pâte levée 24 h, viandes halal, four à pizza. Du mercredi au dimanche dès 18h. Appelez ou commandez sur Uber Eats.">
+<link rel="canonical" href="https://www.pizzeriadomi.fr/">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#1F5B3A">
-<meta property="og:type" content="restaurant">
-<meta property="og:title" content="Pizzeria d'Omi — Pizzas maison à Lille">
-<meta property="og:description" content="Pâte levée 24 h, viandes halal du quartier, cuisson au four à pizza. 2 rue Jeanne d'Arc, Lille.">
-<meta property="og:image" content="images/margarita.jpg">
+<meta name="format-detection" content="telephone=no">
+
+<!-- Partage (Facebook, WhatsApp, Instagram, X) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Pizzeria d'Omi">
+<meta property="og:url" content="https://www.pizzeriadomi.fr/">
+<meta property="og:title" content="Pizzeria d&#39;Omi · Pizza maison et halal à Lille">
+<meta property="og:description" content="Pâte levée 24 h, viandes halal du quartier, cuisson au four à pizza. 2 rue Jeanne d&#39;Arc, Lille.">
+<meta property="og:image" content="https://www.pizzeriadomi.fr/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pizza Margarita de la Pizzeria d&#39;Omi, Lille">
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" as="image" href="images/margarita.jpg" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,600;62..125,700;62..125,800;62..125,900&family=Pinyon+Script&display=swap" rel="stylesheet">
@@ -19,21 +34,256 @@
 {
   "@context": "https://schema.org",
   "@type": "Restaurant",
+  "@id": "https://www.pizzeriadomi.fr/#restaurant",
   "name": "Pizzeria d'Omi",
   "alternateName": "Chez Omi",
-  "servesCuisine": "Pizza",
+  "description": "Pizzeria à Lille : pâte levée 24 h, viandes halal des boucheries du quartier, cuisson au four à pizza.",
+  "url": "https://www.pizzeriadomi.fr/",
+  "image": [
+    "https://www.pizzeriadomi.fr/images/og-image.jpg",
+    "https://www.pizzeriadomi.fr/images/margarita.jpg"
+  ],
+  "logo": "https://www.pizzeriadomi.fr/apple-touch-icon.png",
   "telephone": "+33320043105",
+  "servesCuisine": [
+    "Pizza",
+    "Italienne"
+  ],
+  "priceRange": "8,90 € – 14,90 €",
+  "currenciesAccepted": "EUR",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "2 rue Jeanne d'Arc",
     "postalCode": "59000",
     "addressLocality": "Lille",
+    "addressRegion": "Hauts-de-France",
     "addressCountry": "FR"
   },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Pizzeria+d%27Omi+2+Rue+Jeanne+d%27Arc+59000+Lille",
   "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Sunday"], "opens": "18:00", "closes": "22:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "18:00", "closes": "22:30" }
-  ]
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Sunday"
+      ],
+      "opens": "18:00",
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "18:00",
+      "closes": "22:30"
+    }
+  ],
+  "sameAs": [
+    "https://www.ubereats.com/fr/store/pizzeria-domi/7SZ1Bqo0WsyGGlmWCG1GPw"
+  ],
+  "potentialAction": {
+    "@type": "OrderAction",
+    "target": "https://www.ubereats.com/fr/store/pizzeria-domi/7SZ1Bqo0WsyGGlmWCG1GPw"
+  },
+  "hasMenu": {
+    "@type": "Menu",
+    "name": "Nos pizzas",
+    "url": "https://www.pizzeriadomi.fr/#carte",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Base tomate",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Margarita",
+            "description": "Sauce tomate, mozzarella fior di latte et origan",
+            "offers": {
+              "@type": "Offer",
+              "price": "8.90",
+              "priceCurrency": "EUR"
+            },
+            "suitableForDiet": "https://schema.org/VegetarianDiet"
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Chorizo",
+            "description": "Sauce tomate, chorizo artisanal, mozzarella fior di latte et oignons rouges",
+            "offers": {
+              "@type": "Offer",
+              "price": "12.90",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Oranaise",
+            "description": "Sauce tomate, merguez fraîche, mozzarella fior di latte, oignons rouges et poivrons",
+            "offers": {
+              "@type": "Offer",
+              "price": "12.90",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Vegetariana",
+            "description": "Sauce tomate, légumes grillés de saison, mozzarella fior di latte et olives",
+            "offers": {
+              "@type": "Offer",
+              "price": "11.90",
+              "priceCurrency": "EUR"
+            },
+            "suitableForDiet": "https://schema.org/VegetarianDiet"
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Mediterranea",
+            "description": "Sauce tomate, thon, aubergines rôties, tomates séchées, mozzarella fior di latte et olives",
+            "offers": {
+              "@type": "Offer",
+              "price": "13.90",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Salsiccia",
+            "description": "Sauce tomate, haché de veau, chorizo artisanal, poivrons, oignons rouges et mozzarella",
+            "offers": {
+              "@type": "Offer",
+              "price": "13.90",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Spinata",
+            "description": "Sauce tomate, spinata, chèvre, poivrons grillés, oignons rouges, mozzarella fior di latte",
+            "offers": {
+              "@type": "Offer",
+              "price": "13.90",
+              "priceCurrency": "EUR"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Base crème",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "4 Fromaggi",
+            "description": "Crème fraîche, gorgonzola, mozzarella fior di latte, parmesan et scamorza",
+            "offers": {
+              "@type": "Offer",
+              "price": "12.90",
+              "priceCurrency": "EUR"
+            },
+            "suitableForDiet": "https://schema.org/VegetarianDiet"
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Capra e Miele",
+            "description": "Crème fraîche, chèvre, miel, noix et mozzarella fior di latte",
+            "offers": {
+              "@type": "Offer",
+              "price": "12.90",
+              "priceCurrency": "EUR"
+            },
+            "suitableForDiet": "https://schema.org/VegetarianDiet"
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Pollo",
+            "description": "Crème fraîche, poulet grillé, champignons frais, mozzarella fior di latte et poivrons",
+            "offers": {
+              "@type": "Offer",
+              "price": "12.90",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Raclette",
+            "description": "Crème fraîche, jambon de dinde, fromage raclette, oignons confits et mozzarella fior di latte",
+            "offers": {
+              "@type": "Offer",
+              "price": "12.90",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Regina",
+            "description": "Crème fraîche, jambon de dinde, champignons frais, mozzarella fior di latte et scamorza",
+            "offers": {
+              "@type": "Offer",
+              "price": "12.90",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Pizza d'Omi",
+            "description": "Crème fraîche, chorizo artisanal, haché de veau, légumes grillés et mozzarella fior di latte",
+            "offers": {
+              "@type": "Offer",
+              "price": "13.90",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Frutti di Mare",
+            "description": "Crème fraîche, crevettes, calamars, moules, poivrons, persil, mozzarella fior di latte",
+            "offers": {
+              "@type": "Offer",
+              "price": "14.90",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Tartufo",
+            "description": "Crème de truffe, champignons frais et mozzarella fior di latte",
+            "offers": {
+              "@type": "Offer",
+              "price": "14.90",
+              "priceCurrency": "EUR"
+            },
+            "suitableForDiet": "https://schema.org/VegetarianDiet"
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Suppléments",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Burrata",
+            "offers": {
+              "@type": "Offer",
+              "price": "5.00",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Stracciatella",
+            "offers": {
+              "@type": "Offer",
+              "price": "3.00",
+              "priceCurrency": "EUR"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
 </script>
 </head>
@@ -63,7 +313,7 @@
       </p>
       <div class="hero-title">
         <span class="script hero-script">Chez Omi</span>
-        <h1>PIZZERIA<br>D'OMI</h1>
+        <h1>Pizzeria<br>d'Omi <span class="visually-hidden">— pizzas maison et halal à Lille</span></h1>
       </div>
       <p class="hero-lead">Pâte levée 24 h, viandes halal de nos bouchers du quartier, cuisson au four à pizza. À Lille.</p>
       <div class="hero-actions">
@@ -73,7 +323,7 @@
     </div>
     <div class="hero-photo">
       <div class="hero-photo-inner">
-        <img src="images/margarita.jpg" alt="Pizza Margarita sortie du four" width="460" height="460">
+        <img src="images/margarita.jpg" alt="Pizza Margarita sortie du four à la Pizzeria d'Omi" width="460" height="460" fetchpriority="high">
         <div class="price-tag">
           <span class="price-tag-name">MARGARITA</span>
           <span>dès 8,90 €</span>
@@ -104,7 +354,7 @@
 
   <section id="carte" class="menu wrap">
     <div class="menu-head">
-      <h2 class="label-green">NOS PIZZAS</h2>
+      <h2 class="label-green">Nos pizzas</h2>
       <div role="group" aria-label="Filtrer la carte" class="filters">
         <button type="button" data-filter="all" aria-pressed="true">Toutes</button>
         <button type="button" data-filter="t" aria-pressed="false">Base tomate</button>
@@ -116,77 +366,77 @@
 
     <ul class="menu-list">
       <li data-base="t" data-veg>
-        <div class="item-line"><span class="item-name">Margarita<span class="leaf" role="img" aria-label="Végétarienne" title="Végétarienne"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19 13 11"/></svg></span></span><span class="dots"></span><span class="item-price">8,90</span></div>
+        <div class="item-line"><h3 class="item-name">Margarita<span class="leaf" role="img" aria-label="Végétarienne" title="Végétarienne"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19 13 11"/></svg></span></h3><span class="dots"></span><span class="item-price">8,90</span></div>
         <p>Sauce tomate, mozzarella fior di latte et origan</p>
         <p class="item-tags"><span class="tag-t">Base tomate</span></p>
       </li>
       <li data-base="c" data-veg>
-        <div class="item-line"><span class="item-name">4 Fromaggi<span class="leaf" role="img" aria-label="Végétarienne" title="Végétarienne"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19 13 11"/></svg></span></span><span class="dots"></span><span class="item-price">12,90</span></div>
+        <div class="item-line"><h3 class="item-name">4 Fromaggi<span class="leaf" role="img" aria-label="Végétarienne" title="Végétarienne"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19 13 11"/></svg></span></h3><span class="dots"></span><span class="item-price">12,90</span></div>
         <p>Crème fraîche, gorgonzola, mozzarella fior di latte, parmesan et scamorza</p>
         <p class="item-tags"><span class="tag-c">Base crème</span></p>
       </li>
       <li data-base="t">
-        <div class="item-line"><span class="item-name">Chorizo</span><span class="dots"></span><span class="item-price">12,90</span></div>
+        <div class="item-line"><h3 class="item-name">Chorizo</h3><span class="dots"></span><span class="item-price">12,90</span></div>
         <p>Sauce tomate, chorizo artisanal, mozzarella fior di latte et oignons rouges</p>
         <p class="item-tags"><span class="tag-t">Base tomate</span></p>
       </li>
       <li data-base="c" data-veg>
-        <div class="item-line"><span class="item-name">Capra e Miele<span class="leaf" role="img" aria-label="Végétarienne" title="Végétarienne"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19 13 11"/></svg></span></span><span class="dots"></span><span class="item-price">12,90</span></div>
+        <div class="item-line"><h3 class="item-name">Capra e Miele<span class="leaf" role="img" aria-label="Végétarienne" title="Végétarienne"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19 13 11"/></svg></span></h3><span class="dots"></span><span class="item-price">12,90</span></div>
         <p>Crème fraîche, chèvre, miel, noix et mozzarella fior di latte</p>
         <p class="item-tags"><span class="tag-c">Base crème</span></p>
       </li>
       <li data-base="t">
-        <div class="item-line"><span class="item-name">Oranaise</span><span class="dots"></span><span class="item-price">12,90</span></div>
+        <div class="item-line"><h3 class="item-name">Oranaise</h3><span class="dots"></span><span class="item-price">12,90</span></div>
         <p>Sauce tomate, merguez fraîche, mozzarella fior di latte, oignons rouges et poivrons</p>
         <p class="item-tags"><span class="tag-t">Base tomate</span></p>
       </li>
       <li data-base="c">
-        <div class="item-line"><span class="item-name">Pollo</span><span class="dots"></span><span class="item-price">12,90</span></div>
+        <div class="item-line"><h3 class="item-name">Pollo</h3><span class="dots"></span><span class="item-price">12,90</span></div>
         <p>Crème fraîche, poulet grillé, champignons frais, mozzarella fior di latte et poivrons</p>
         <p class="item-tags"><span class="tag-c">Base crème</span></p>
       </li>
       <li data-base="t" data-veg>
-        <div class="item-line"><span class="item-name">Vegetariana<span class="leaf" role="img" aria-label="Végétarienne" title="Végétarienne"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19 13 11"/></svg></span></span><span class="dots"></span><span class="item-price">11,90</span></div>
+        <div class="item-line"><h3 class="item-name">Vegetariana<span class="leaf" role="img" aria-label="Végétarienne" title="Végétarienne"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19 13 11"/></svg></span></h3><span class="dots"></span><span class="item-price">11,90</span></div>
         <p>Sauce tomate, légumes grillés de saison, mozzarella fior di latte et olives</p>
         <p class="item-tags"><span class="tag-t">Base tomate</span></p>
       </li>
       <li data-base="c">
-        <div class="item-line"><span class="item-name">Raclette</span><span class="dots"></span><span class="item-price">12,90</span></div>
+        <div class="item-line"><h3 class="item-name">Raclette</h3><span class="dots"></span><span class="item-price">12,90</span></div>
         <p>Crème fraîche, jambon de dinde, fromage raclette, oignons confits et mozzarella fior di latte</p>
         <p class="item-tags"><span class="tag-c">Base crème</span></p>
       </li>
       <li data-base="t">
-        <div class="item-line"><span class="item-name">Mediterranea</span><span class="dots"></span><span class="item-price">13,90</span></div>
+        <div class="item-line"><h3 class="item-name">Mediterranea</h3><span class="dots"></span><span class="item-price">13,90</span></div>
         <p>Sauce tomate, thon, aubergines rôties, tomates séchées, mozzarella fior di latte et olives</p>
         <p class="item-tags"><span class="tag-t">Base tomate</span></p>
       </li>
       <li data-base="c">
-        <div class="item-line"><span class="item-name">Regina</span><span class="dots"></span><span class="item-price">12,90</span></div>
+        <div class="item-line"><h3 class="item-name">Regina</h3><span class="dots"></span><span class="item-price">12,90</span></div>
         <p>Crème fraîche, jambon de dinde, champignons frais, mozzarella fior di latte et scamorza</p>
         <p class="item-tags"><span class="tag-c">Base crème</span></p>
       </li>
       <li data-base="t">
-        <div class="item-line"><span class="item-name">Salsiccia</span><span class="dots"></span><span class="item-price">13,90</span></div>
+        <div class="item-line"><h3 class="item-name">Salsiccia</h3><span class="dots"></span><span class="item-price">13,90</span></div>
         <p>Sauce tomate, haché de veau, chorizo artisanal, poivrons, oignons rouges et mozzarella</p>
         <p class="item-tags"><span class="tag-t">Base tomate</span></p>
       </li>
       <li data-base="c">
-        <div class="item-line"><span class="item-name">Pizza d'Omi</span><span class="dots"></span><span class="item-price">13,90</span></div>
+        <div class="item-line"><h3 class="item-name">Pizza d'Omi</h3><span class="dots"></span><span class="item-price">13,90</span></div>
         <p>Crème fraîche, chorizo artisanal, haché de veau, légumes grillés et mozzarella fior di latte</p>
         <p class="item-tags"><span class="tag-c">Base crème</span></p>
       </li>
       <li data-base="t">
-        <div class="item-line"><span class="item-name">Spinata</span><span class="dots"></span><span class="item-price">13,90</span></div>
+        <div class="item-line"><h3 class="item-name">Spinata</h3><span class="dots"></span><span class="item-price">13,90</span></div>
         <p>Sauce tomate, spinata, chèvre, poivrons grillés, oignons rouges, mozzarella fior di latte</p>
         <p class="item-tags"><span class="tag-t">Base tomate</span></p>
       </li>
       <li data-base="c">
-        <div class="item-line"><span class="item-name">Frutti di Mare</span><span class="dots"></span><span class="item-price">14,90</span></div>
+        <div class="item-line"><h3 class="item-name">Frutti di Mare</h3><span class="dots"></span><span class="item-price">14,90</span></div>
         <p>Crème fraîche, crevettes, calamars, moules, poivrons, persil, mozzarella fior di latte</p>
         <p class="item-tags"><span class="tag-c">Base crème</span><span class="tag-note">· VENDREDI → DIMANCHE</span></p>
       </li>
       <li data-base="c" data-veg>
-        <div class="item-line"><span class="item-name">Tartufo<span class="leaf" role="img" aria-label="Végétarienne" title="Végétarienne"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19 13 11"/></svg></span></span><span class="dots"></span><span class="item-price">14,90</span></div>
+        <div class="item-line"><h3 class="item-name">Tartufo<span class="leaf" role="img" aria-label="Végétarienne" title="Végétarienne"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19 13 11"/></svg></span></h3><span class="dots"></span><span class="item-price">14,90</span></div>
         <p>Crème de truffe, champignons frais et mozzarella fior di latte</p>
         <p class="item-tags"><span class="tag-c">Base crème</span></p>
       </li>
@@ -196,16 +446,16 @@
   </section>
 
   <section class="gallery wrap" aria-label="Quelques pizzas">
-    <figure><img src="images/margarita.jpg" alt="Pizza Margarita" loading="lazy" width="394" height="394"><figcaption>MARGARITA — 8,90</figcaption></figure>
-    <figure><img src="images/capra-e-miele.jpg" alt="Pizza Capra e Miele" loading="lazy" width="394" height="394"><figcaption>CAPRA E MIELE — 12,90</figcaption></figure>
-    <figure><img src="images/pollo.jpg" alt="Pizza Pollo" loading="lazy" width="394" height="394"><figcaption>POLLO — 12,90</figcaption></figure>
-    <figure><img src="images/raclette.jpg" alt="Pizza Raclette" loading="lazy" width="394" height="394"><figcaption>RACLETTE — 12,90</figcaption></figure>
+    <figure><img src="images/margarita.jpg" alt="Pizza Margarita : sauce tomate, mozzarella fior di latte et basilic" loading="lazy" width="394" height="394"><figcaption>MARGARITA — 8,90</figcaption></figure>
+    <figure><img src="images/capra-e-miele.jpg" alt="Pizza Capra e Miele : chèvre, miel et noix" loading="lazy" width="394" height="394"><figcaption>CAPRA E MIELE — 12,90</figcaption></figure>
+    <figure><img src="images/pollo.jpg" alt="Pizza Pollo : poulet grillé et champignons" loading="lazy" width="394" height="394"><figcaption>POLLO — 12,90</figcaption></figure>
+    <figure><img src="images/raclette.jpg" alt="Pizza Raclette : fromage raclette et jambon de dinde" loading="lazy" width="394" height="394"><figcaption>RACLETTE — 12,90</figcaption></figure>
   </section>
 
   <section id="infos" class="infos">
     <div class="wrap infos-grid">
       <div class="infos-col">
-        <h2>HORAIRES</h2>
+        <h2>Horaires</h2>
         <ul class="hours" data-hours>
           <li data-day="1"><span>Lundi</span><span>Fermé</span></li>
           <li data-day="2"><span>Mardi</span><span>Fermé</span></li>
@@ -217,7 +467,7 @@
         </ul>
       </div>
       <div class="infos-col">
-        <h2>NOUS TROUVER</h2>
+        <h2>Nous trouver</h2>
         <p class="address">2 rue Jeanne d'Arc<br>59000 Lille</p>
         <div class="infos-actions">
           <a href="https://www.google.com/maps/search/?api=1&amp;query=Pizzeria+d%27Omi+2+Rue+Jeanne+d%27Arc+59000+Lille" class="btn btn-cream" target="_blank" rel="noopener">Itinéraire</a>

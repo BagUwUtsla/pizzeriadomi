@@ -291,3 +291,11 @@ a:hover { color: var(--green-dark); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* Headings are written in normal case for search engines; the design shows them in capitals */
+.hero h1, .label-green, .infos h2 { text-transform: uppercase; }
+.menu-list h3 { margin: 0; }
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
