@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pizzeria d'Omi — Pizzas maison à Lille</title>
+<meta name="description" content="Chez Omi, pizzeria à Lille : pâte levée 24 h, viandes halal du quartier, cuisson au four à pizza. 2 rue Jeanne d'Arc. Ouvert du mercredi au dimanche dès 18h.">
+<meta name="theme-color" content="#1F5B3A">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Pizzeria d'Omi — Pizzas maison à Lille">
+<meta property="og:description" content="Pâte levée 24 h, viandes halal du quartier, cuisson au four à pizza. 2 rue Jeanne d'Arc, Lille.">
+<meta property="og:image" content="images/margarita.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,600;62..125,700;62..125,800;62..125,900&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Pizzeria d'Omi",
+  "alternateName": "Chez Omi",
+  "servesCuisine": "Pizza",
+  "telephone": "+33320043105",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2 rue Jeanne d'Arc",
+    "postalCode": "59000",
+    "addressLocality": "Lille",
+    "addressCountry": "FR"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Sunday"], "opens": "18:00", "closes": "22:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "18:00", "closes": "22:30" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="stripes" aria-hidden="true"><span></span><span></span><span></span></div>
+
+<header class="site-header">
+  <a href="#top" class="brand">
+    <span class="script">Chez Omi</span>
+    <span class="brand-word">PIZZERIA</span>
+  </a>
+  <nav aria-label="Navigation principale" class="nav">
+    <a href="#carte">La carte</a>
+    <a href="#maison" class="desktop-only">La maison</a>
+    <a href="#infos"><span class="desktop-only">Horaires &amp; accès</span><span class="mobile-only">Infos</span></a>
+    <a href="tel:+33320043105" class="nav-phone desktop-only">03 20 04 31 05</a>
+  </nav>
+</header>
+
+<main>
+  <section id="top" class="hero wrap">
+    <div class="hero-text">
+      <p class="status" data-status>
+        <span class="status-dot"></span>
+        <span class="status-text">Ouvert du mercredi au dimanche dès 18h</span>
+      </p>
+      <div class="hero-title">
+        <span class="script hero-script">Chez Omi</span>
+        <h1>PIZZERIA<br>D'OMI</h1>
+      </div>
+      <p class="hero-lead">Pâte levée 24 h, viandes halal de nos bouchers du quartier, cuisson au four à pizza. À Lille.</p>
+      <div class="hero-actions">
+        <a href="https://www.ubereats.com/fr/store/pizzeria-domi/7SZ1Bqo0WsyGGlmWCG1GPw?diningMode=DELIVERY" class="btn btn-red desktop-only" target="_blank" rel="noopener">Commander sur Uber Eats</a>
+        <a href="#carte" class="btn btn-outline">Voir la carte <span class="mobile-only" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="hero-photo-inner">
+        <img src="images/margarita.jpg" alt="Pizza Margarita sortie du four" width="460" height="460">
+        <div class="price-tag">
+          <span class="price-tag-name">MARGARITA</span>
+          <span>dès 8,90 €</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="maison" class="values">
+    <div class="wrap values-grid">
+      <div class="value">
+        <span class="value-num">01</span>
+        <h2>100 % maison</h2>
+        <p>Chaque pâte est préparée et lève 24 h avant d'arriver dans votre assiette.</p>
+      </div>
+      <div class="value">
+        <span class="value-num">02</span>
+        <h2>Halal et local</h2>
+        <p>Nos viandes viennent des boucheries halal du quartier. Bon pour le goût, bon pour le coin.</p>
+      </div>
+      <div class="value">
+        <span class="value-num">03</span>
+        <h2>Four à pizza</h2>
+        <p>Une cuisson vive dans un vrai four à pizza, pour une pâte légère et bien alvéolée.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="carte" class="menu wrap">
+    <div class="menu-head">
+      <h2 class="label-green">NOS PIZZAS</h2>
+      <div role="group" aria-label="Filtrer la carte" class="filters">
+        <button type="button" data-filter="all" aria-pressed="true">Toutes</button>
+        <button type="button" data-filter="t" aria-pressed="false">Base tomate</button>
+        <button type="button" data-filter="c" aria-pressed="false">Base crème</button>
+        <button type="button" data-filter="veg" aria-pressed="false">Végétariennes</button>
+      </div>
+      <p class="legend"><span class="leaf" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19 13 11"/></svg></span>Pizza végétarienne</p>
+    </div>
+
+    <ul class="menu-list">
+      <li data-base="t" data-veg>
+        <div class="item-line"><span class="item-name">Margarita<span class="leaf" role="img" aria-label="Végétarienne" title="Végétarienne"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19 13 11"/></svg></span></span><span class="dots"></span><span class="item-price">8,90</span></div>
+        <p>Sauce tomate, mozzarella fior di latte et origan</p>
+        <p class="item-tags"><span class="tag-t">Base tomate</span></p>
+      </li>
+      <li data-base="c" data-veg>
+        <div class="item-line"><span class="item-name">4 Fromaggi<span class="leaf" role="img" aria-label="Végétarienne" title="Végétarienne"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19 13 11"/></svg></span></span><span class="dots"></span><span class="item-price">12,90</span></div>
+        <p>Crème fraîche, gorgonzola, mozzarella fior di latte, parmesan et scamorza</p>
+        <p class="item-tags"><span class="tag-c">Base crème</span></p>
+      </li>
+      <li data-base="t">
+        <div class="item-line"><span class="item-name">Chorizo</span><span class="dots"></span><span class="item-price">12,90</span></div>
+        <p>Sauce tomate, chorizo artisanal, mozzarella fior di latte et oignons rouges</p>
+        <p class="item-tags"><span class="tag-t">Base tomate</span></p>
+      </li>
+      <li data-base="c" data-veg>
+        <div class="item-line"><span class="item-name">Capra e Miele<span class="leaf" role="img" aria-label="Végétarienne" title="Végétarienne"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19 13 11"/></svg></span></span><span class="dots"></span><span class="item-price">12,90</span></div>
+        <p>Crème fraîche, chèvre, miel, noix et mozzarella fior di latte</p>
+        <p class="item-tags"><span class="tag-c">Base crème</span></p>
+      </li>
+      <li data-base="t">
+        <div class="item-line"><span class="item-name">Oranaise</span><span class="dots"></span><span class="item-price">12,90</span></div>
+        <p>Sauce tomate, merguez fraîche, mozzarella fior di latte, oignons rouges et poivrons</p>
+        <p class="item-tags"><span class="tag-t">Base tomate</span></p>
+      </li>
+      <li data-base="c">
+        <div class="item-line"><span class="item-name">Pollo</span><span class="dots"></span><span class="item-price">12,90</span></div>
+        <p>Crème fraîche, poulet grillé, champignons frais, mozzarella fior di latte et poivrons</p>
+        <p class="item-tags"><span class="tag-c">Base crème</span></p>
+      </li>
+      <li data-base="t" data-veg>
+        <div class="item-line"><span class="item-name">Vegetariana<span class="leaf" role="img" aria-label="Végétarienne" title="Végétarienne"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19 13 11"/></svg></span></span><span class="dots"></span><span class="item-price">11,90</span></div>
+        <p>Sauce tomate, légumes grillés de saison, mozzarella fior di latte et olives</p>
+        <p class="item-tags"><span class="tag-t">Base tomate</span></p>
+      </li>
+      <li data-base="c">
+        <div class="item-line"><span class="item-name">Raclette</span><span class="dots"></span><span class="item-price">12,90</span></div>
+        <p>Crème fraîche, jambon de dinde, fromage raclette, oignons confits et mozzarella fior di latte</p>
+        <p class="item-tags"><span class="tag-c">Base crème</span></p>
+      </li>
+      <li data-base="t">
+        <div class="item-line"><span class="item-name">Mediterranea</span><span class="dots"></span><span class="item-price">13,90</span></div>
+        <p>Sauce tomate, thon, aubergines rôties, tomates séchées, mozzarella fior di latte et olives</p>
+        <p class="item-tags"><span class="tag-t">Base tomate</span></p>
+      </li>
+      <li data-base="c">
+        <div class="item-line"><span class="item-name">Regina</span><span class="dots"></span><span class="item-price">12,90</span></div>
+        <p>Crème fraîche, jambon de dinde, champignons frais, mozzarella fior di latte et scamorza</p>
+        <p class="item-tags"><span class="tag-c">Base crème</span></p>
+      </li>
+      <li data-base="t">
+        <div class="item-line"><span class="item-name">Salsiccia</span><span class="dots"></span><span class="item-price">13,90</span></div>
+        <p>Sauce tomate, haché de veau, chorizo artisanal, poivrons, oignons rouges et mozzarella</p>
+        <p class="item-tags"><span class="tag-t">Base tomate</span></p>
+      </li>
+      <li data-base="c">
+        <div class="item-line"><span class="item-name">Pizza d'Omi</span><span class="dots"></span><span class="item-price">13,90</span></div>
+        <p>Crème fraîche, chorizo artisanal, haché de veau, légumes grillés et mozzarella fior di latte</p>
+        <p class="item-tags"><span class="tag-c">Base crème</span></p>
+      </li>
+      <li data-base="t">
+        <div class="item-line"><span class="item-name">Spinata</span><span class="dots"></span><span class="item-price">13,90</span></div>
+        <p>Sauce tomate, spinata, chèvre, poivrons grillés, oignons rouges, mozzarella fior di latte</p>
+        <p class="item-tags"><span class="tag-t">Base tomate</span></p>
+      </li>
+      <li data-base="c">
+        <div class="item-line"><span class="item-name">Frutti di Mare</span><span class="dots"></span><span class="item-price">14,90</span></div>
+        <p>Crème fraîche, crevettes, calamars, moules, poivrons, persil, mozzarella fior di latte</p>
+        <p class="item-tags"><span class="tag-c">Base crème</span><span class="tag-note">· VENDREDI → DIMANCHE</span></p>
+      </li>
+      <li data-base="c" data-veg>
+        <div class="item-line"><span class="item-name">Tartufo<span class="leaf" role="img" aria-label="Végétarienne" title="Végétarienne"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19 13 11"/></svg></span></span><span class="dots"></span><span class="item-price">14,90</span></div>
+        <p>Crème de truffe, champignons frais et mozzarella fior di latte</p>
+        <p class="item-tags"><span class="tag-c">Base crème</span></p>
+      </li>
+    </ul>
+
+    <p class="extras"><strong>Suppléments</strong> — Burrata 5 € · Stracciatella 3 €</p>
+  </section>
+
+  <section class="gallery wrap" aria-label="Quelques pizzas">
+    <figure><img src="images/margarita.jpg" alt="Pizza Margarita" loading="lazy" width="394" height="394"><figcaption>MARGARITA — 8,90</figcaption></figure>
+    <figure><img src="images/capra-e-miele.jpg" alt="Pizza Capra e Miele" loading="lazy" width="394" height="394"><figcaption>CAPRA E MIELE — 12,90</figcaption></figure>
+    <figure><img src="images/pollo.jpg" alt="Pizza Pollo" loading="lazy" width="394" height="394"><figcaption>POLLO — 12,90</figcaption></figure>
+    <figure><img src="images/raclette.jpg" alt="Pizza Raclette" loading="lazy" width="394" height="394"><figcaption>RACLETTE — 12,90</figcaption></figure>
+  </section>
+
+  <section id="infos" class="infos">
+    <div class="wrap infos-grid">
+      <div class="infos-col">
+        <h2>HORAIRES</h2>
+        <ul class="hours" data-hours>
+          <li data-day="1"><span>Lundi</span><span>Fermé</span></li>
+          <li data-day="2"><span>Mardi</span><span>Fermé</span></li>
+          <li data-day="3"><span>Mercredi</span><span>18h – 22h</span></li>
+          <li data-day="4"><span>Jeudi</span><span>18h – 22h</span></li>
+          <li data-day="5"><span>Vendredi</span><span>18h – 22h</span></li>
+          <li data-day="6"><span>Samedi</span><span>18h – 22h30</span></li>
+          <li data-day="0"><span>Dimanche</span><span>18h – 22h</span></li>
+        </ul>
+      </div>
+      <div class="infos-col">
+        <h2>NOUS TROUVER</h2>
+        <p class="address">2 rue Jeanne d'Arc<br>59000 Lille</p>
+        <div class="infos-actions">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Pizzeria+d%27Omi+2+Rue+Jeanne+d%27Arc+59000+Lille" class="btn btn-cream" target="_blank" rel="noopener">Itinéraire</a>
+          <a href="tel:+33320043105" class="btn btn-ghost">Appeler</a>
+          <a href="https://www.ubereats.com/fr/store/pizzeria-domi/7SZ1Bqo0WsyGGlmWCG1GPw?diningMode=DELIVERY" class="btn btn-ghost" target="_blank" rel="noopener">Uber Eats</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap map-wrap">
+      <div class="map">
+        <iframe title="Carte : Pizzeria d'Omi, 2 rue Jeanne d'Arc, Lille" src="https://maps.google.com/maps?q=Pizzeria%20d%27Omi%2C%202%20Rue%20Jeanne%20d%27Arc%2C%2059000%20Lille&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Pizzeria+d%27Omi+2+Rue+Jeanne+d%27Arc+59000+Lille" class="btn btn-red map-btn" target="_blank" rel="noopener">Ouvrir dans Google Maps ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span><span class="script footer-script">Chez Omi</span> · Pizzeria d'Omi, Lille</span>
+    <span>100 % fresh food · Halal</span>
+  </div>
+  <div class="stripes stripes-footer" aria-hidden="true"><span></span><span></span></div>
+</footer>
+
+<div class="order-bar" aria-label="Commander">
+  <a href="tel:+33320043105" class="btn btn-outline">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+    Appeler
+  </a>
+  <a href="https://www.ubereats.com/fr/store/pizzeria-domi/7SZ1Bqo0WsyGGlmWCG1GPw?diningMode=DELIVERY" class="btn btn-red" target="_blank" rel="noopener">Commander · Uber Eats</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
