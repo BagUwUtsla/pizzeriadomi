@@ -14,10 +14,7 @@ Basé sur le design « Tricolore v2 » (desktop + mobile).
 
 - **Prix / pizzas** : dans `index.html`, section `#carte`. Chaque pizza est un `<li>` avec
   `data-base="t"` (tomate) ou `"c"` (crème), et `data-veg` si végétarienne.
-- **Horaires** : dans `script.js` (`HOURS`) *et* dans `index.html` (liste `data-hours` + JSON-LD en haut).
-- **SEO** : le bloc `application/ld+json` en haut de `index.html` décrit le restaurant, les horaires et
-  la carte pour Google. Si un prix ou une pizza change, le modifier aussi là-dedans.
-  Mettre à jour `<lastmod>` dans `sitemap.xml` après une grosse modification.
+- **Horaires** : dans `script.js` (`HOURS`) *et* dans `index.html` (liste `data-hours` + bloc JSON-LD pour Google, en haut).
 
 ## Aperçu local
 
