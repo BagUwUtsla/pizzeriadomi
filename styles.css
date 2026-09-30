@@ -283,7 +283,7 @@ a:hover { color: var(--green-dark); }
     padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
     background: var(--cream); border-top: 2px solid var(--ink);
   }
-  .order-bar .btn { min-height: 52px; padding: 0 12px; }
+  .order-bar .btn { min-height: 52px; padding: 0 12px; white-space: nowrap; font-size: 15px; gap: 8px; }
   .order-bar .btn-outline { flex: 1 1 0; }
   .order-bar .btn-red { flex: 2 1 0; }
 }
